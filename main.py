@@ -73,10 +73,7 @@ def main(debug=False):
                         platform_counts.append(f"{pf_name}: {count}")
                     total += count
 
-            # 三题哥的打死也不说id ......
-            if nickname == "三题哥":
-                total = 3
-                platform_counts.append(f"leetcode: 3")
+
 
             platform_str = "\t".join(platform_counts) if platform_counts else "未做题"
             logger.info(f"{date}\t{nickname:<18}\t做题数\t{total:<3}\t({platform_str})")
